@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="./styles/inicio.css">
+    <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="styles/sobre.css">
+    <link rel="stylesheet" href="styles/tecnologias.css">
+    <link rel="stylesheet" href="styles/projetos.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+</head>
+<body>
+    <script>
+        function abrirMenu() {  
+            if(document.getElementById("menu-mobile").clientWidth == 0) {
+                document.getElementById("menu-mobile").style.right = "0px";
+                document.getElementById("menu-mobile").style.width = "50vw";
+            } else {
+                document.getElementById("menu-mobile").style.right = "-300px";
+                document.getElementById("menu-mobile").style.width = "0";
+            }
+        }
+
+    </script>
+    <header>
+        <div id="div-titulo">
+            <p style="margin-right: 8px;">Ferreira <span style="color: var(--primary-color); font-weight: bold;">codes</span></p>
+        </div>
+
+        <div class="mobile-menu" onclick="abrirMenu()">
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="line3"></div>
+        </div>
+
+        <nav id="menu-desktop">
+            <ul id="menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#tecnologias">Tecnologias</a>
+                <a href="#projetos" id="btn-contato">Projetos</a>
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="menu-mobile">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#tecnologias">Tecnologias</a>
+        <a href="#projetos" id="btn-contato">Projetos</a>
+    </nav>
+
+    <main>
+        <section class="reveal" id="inicio">
+            <div id="infos-inicio">
+                <p id="ola">Olá, Seja Bem-vindo(a)!</p>
+                <p id="meu-nome">Me chamo Leonardo Ferreira</p>
+                <p id="seu-dev">Analista e Programador</p>
+                
+                <div>
+                    <a href="https://www.linkedin.com/in/leonardo-dos-santos-ferreira-bb4644160/" target="_blank" class="redes-sociais"><img src="./imagens/linkedin.png"  ></a>
+                    <a href="https://github.com/LeonardoeFerreira" target="_blank" class="redes-sociais"><img src="./imagens/github.png"  ></a>
+                    <a href="https://www.youtube.com/channel/UCgFFVB2vIfh7hs8lDd56SJg" target="_blank" class="redes-sociais"><img src="./imagens/youtube.png"  ></a>
+                </div>
+            </div>
+            
+            <div id="div-img">
+                <img src="./imagens/eu.jpg" id="img-eu">
+            </div>
+        </section>
+
+        <section id="sobre" class="reveal">
+            <div>
+                <h2 id="titulo-page-sobre">Sobre <span style="color: var(--primary-color);">Mim</span></h2>
+            </div>
+
+            <div id="div-textos-sobre">
+                <p>Throughout my professional career, I have participated in several projects using different technologies
+                such as HTML5, CSS3, Bootstrap, JavaScript, Jquery, PHP, MySQL, MongoDB, C#, Java, Kotlin and Python.</p>
+                <br>                  
+            </div>
+        </section>
+
+        <section id="tecnologias" class="reveal">
+            <div>
+                <h2 class="titulo-page"><span style="color: var(--primary-color);">Tecnologias</span> que utilizo atualmente</h2>
+            </div>
+
+            <div id="container-tecnologias">
+                <div class="card-tecnologia">
+                    <i class="fi fi-brands-java" ></i>
+                    <p>Java</p>
+                </div>
+                <div class="card-tecnologia">
+                    <i class="fi fi-brands-python" ></i>
+                    <p>Python</p>
+                </div>
+                <div class="card-tecnologia">
+                    <i class="fi fi-brands-html5" ></i>
+                    <p>HTML</p>
+                </div>
+                <div class="card-tecnologia">
+                    <i class="fi fi-brands-css3" ></i>
+                    <p>CSS</p>
+                </div>                
+                <div class="card-tecnologia">
+                    <i class="fi fi-brands-mysql" ></i>
+                    <p>Mysql</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="reveal">
+            <div>
+                <h2 id="titulo-page-projeto">Meus Projetos</h2>
+            </div>
+
+            <div id="container-projetos">
+                <div class="card-projeto">
+                    <div class="div-img-projeto">
+                        <img src="imagens/scripsnmp.PNG" >
+                    </div>
+                    <div class="div-infos-projeto">
+                        <p>Scrip SNMP</p>
+                        <p>Leitor de OIDs</p>
+                        <p>Tecnologias: Python e sqlite3</p>
+                    </div>
+                    <div>
+                        <a href="" target="_blank" class="redes-sociais"><img src="imagens/github_branco.png"></a>
+                    </div>
+                </div>
+                
+                </div>               
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; Leonardo Ferreira, 2023</p>
+    </footer>
+    </body>
+</html>
