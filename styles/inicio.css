@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+#btn-contato {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+#btn-contato:hover {
+    background-color: var(--primary-hover);
+}
+
+#div-titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+#infos-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+#inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#meu-nome {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#seu-dev {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+.redes-sociais {
+    text-decoration: none;
+}
+
+.redes-sociais * {
+    width: 40px;
+    height: 40px;
+    margin-inline: 5px;
+}
+
+#ola {
+    padding: 8px;
+    background-color: var(--primary-color);
+    color: white;
+    width: 211px;
+    border-radius: 3px;
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+#img-eu {
+    width: 400px;
+}
+
+@media only screen and (max-width: 1110px) {
+    #inicio {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #infos-inicio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        margin-top: 20px;
+    }
+    
+    #img-eu {
+        margin-top: 66px;
+        height: 300px;
+        width: 270px;
+    }
+}
